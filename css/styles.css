@@ -539,8 +539,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Лейбл */
 .subscribe-label {
-    margin-right: 12px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
 }
@@ -561,7 +560,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .subscribe-input:focus {
-    border-color: #2196f3;
+    border-color: #31D0AA;
     outline: none;
 }
 
@@ -574,22 +573,34 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Кнопка */
 .submit-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 165px;
     margin-left: 12px;
     padding: 12px 24px;
+    padding-right: 16px;
     background-color: #2196f3;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
     border: none;
     border-radius: 4px;
+    gap: 16px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn-frame {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
-    background-color: #1976d2;
+    background-color: #31D0AA;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     outline: none;
 }
@@ -632,23 +643,42 @@ h1, h2, h3, h4, h5, h6, p {
 /* ===== CLOSE BUTTON ===== */
 .modal-close {
     position: absolute;
-    top: 26px;
-    right: 26px;
-    width: 32px;
-    height: 32px;
+    top: 24px;
+    right: 24px;
+
+    width: 30px;
+    height: 30px;
+
     border-radius: 50%;
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
+    background-color: #e7e9fc;
+    /* светлый фон как в макете */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+.modal-close:hover svg {
+    fill: #fff;
 }
 
 /* ===== TITLE ===== */
 .modal-title {
+    margin-top: 48px;
+    margin-bottom: 16px;
     text-align: center;
-    font-weight: 500;
-    margin-bottom: 40px;
     font-size: 16px;
+    font-weight: 500;
 }
 
 /* ===== FORM ===== */
@@ -687,7 +717,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: -0.02em;
     color: #111;
     padding-left: 50px;
-    transition: border-color 300ms ease;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input::placeholder {
@@ -701,17 +731,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===== ICONS INSIDE INPUT ===== */
 .modal-field-icon {
-    fill: transparent;
-    stroke: #111;
+    fill: #2E2F42;
+    stroke: none;
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
     pointer-events: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus+.modal-field-icon {
-    stroke: #4D5AE5;
+    fill: #4D5AE5;
 }
 
 /* ===== TEXTAREA ===== */
@@ -746,7 +777,9 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: background-color 300ms ease, border-color 300ms ease, fill 300ms ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                 border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked+.modal-check-label .check-mark {
@@ -771,9 +804,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 300ms ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit:hover {
-    background-color: #404BBF;
+    background-color: #4D5AE5;
 }
