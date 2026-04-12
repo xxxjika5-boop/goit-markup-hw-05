@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-container {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .logo-bottom {
@@ -546,9 +546,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Поле ввода */
 .subscribe-input {
-    width: 250px;
+    width: 264px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: transparent;
     color: #fff;
@@ -556,7 +557,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .subscribe-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
 }
 
 .subscribe-input:focus {
@@ -567,7 +568,7 @@ h1, h2, h3, h4, h5, h6, p {
 .subscribe-row {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 24px;
     margin-top: 16px;
 }
 
@@ -577,12 +578,12 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-flex;
     align-items: center;
     width: 165px;
-    margin-left: 12px;
+    margin-left: 0;
     padding: 12px 24px;
     padding-right: 16px;
-    background-color: #2196f3;
+    background-color: #4d5ae5;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     border: none;
     border-radius: 4px;
@@ -612,7 +613,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -634,10 +635,13 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     max-width: 408px;
     min-height: 584px;
-    background-color: #fafafa;
-    border-radius: 15px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
     padding: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow:
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== CLOSE BUTTON ===== */
@@ -646,12 +650,11 @@ h1, h2, h3, h4, h5, h6, p {
     top: 24px;
     right: 24px;
 
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     border-radius: 50%;
     background-color: #e7e9fc;
-    /* светлый фон как в макете */
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     display: flex;
@@ -664,8 +667,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .modal-close:hover {
-    background-color: #4D5AE5;
-    border-color: #4D5AE5;
+    background-color: #404bbf;
+}
+
+.modal-close:focus {
+    background-color: #404bbf;
 }
 
 .modal-close:hover svg {
@@ -689,7 +695,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===== FIELD ===== */
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .modal-label {
@@ -808,5 +814,5 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .submit:hover {
-    background-color: #4D5AE5;
+    background-color: #404bbf;
 }
