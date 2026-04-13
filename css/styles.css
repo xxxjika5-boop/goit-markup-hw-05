@@ -470,13 +470,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-left {
     width: 264px;
-    margin-right: 120px;
+
     
 }
 
 .footer-right {
     max-width: 208px;
-    margin-right: 80px;
 }
 
 .social-list-footer {
@@ -555,7 +554,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* Поле ввода */
 .subscribe-input {
     width: 264px;
-    padding: 10px;
+    height: 40px;
+    padding: 8px 16px;
     border: 1px solid #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -584,10 +584,10 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     display: inline-flex;
     align-items: center;
-    width: 165px;
+    width: auto;
+    height: 40px;
     margin-left: 0;
-    padding: 12px 24px;
-    padding-right: 16px;
+    padding: 8px 24px;
     background-color: #4d5ae5;
     color: #fff;
     font-size: 16px;
@@ -636,6 +636,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* ===== MODAL ===== */
 .modal {
     position: absolute;
+    padding: 40px 24px 24px 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -644,7 +645,6 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 24px;
     box-shadow:
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -662,6 +662,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     border-radius: 50%;
     background-color: #e7e9fc;
+    color: #2E2F42;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     display: flex;
@@ -688,11 +689,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .modal-close svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2E2F42;
 }
 
 /* ===== TITLE ===== */
 .modal-title {
-    margin-top: 48px;
+    margin-top: 0;
     margin-bottom: 16px;
     text-align: center;
     font-size: 16px;
@@ -775,7 +777,7 @@ h1, h2, h3, h4, h5, h6, p {
 .modal-textarea {
     height: 120px;
     resize: none;
-    padding: 16px;
+    padding: 8px 16px;
     margin-bottom: 0;
 }
 
@@ -823,7 +825,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===== SUBMIT BUTTON ===== */
 .submit {
-    width: 169px;
+    width: auto;
     height: 56px;
     background-color:#4D5AE5;
     color: #fff;
@@ -836,6 +838,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit:hover {
+.submit:hover,
+.submit:focus {
     background-color: #404bbf;
 }
