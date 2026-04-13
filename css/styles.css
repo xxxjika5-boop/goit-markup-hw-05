@@ -558,7 +558,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 40px;
     padding: 8px 16px;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     border: 1px solid #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -640,7 +640,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* ===== MODAL ===== */
 .modal {
     position: absolute;
-    padding: 40px 24px 24px 24px;
+    padding: 72px 24px 24px 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -715,7 +715,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===== FIELD ===== */
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .modal-field:nth-child(4) {
@@ -793,7 +793,7 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
