@@ -715,11 +715,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ===== FIELD ===== */
 .modal-field {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-field:nth-child(4) {
     margin-bottom: 16px;
+}
+
+.modal-field:last-of-type {
+    margin-bottom: 24px;
 }
 
 .modal-field textarea {
